@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {AppComponent} from './app.component';
 import {CategoryComponent} from './category/category.component';
+import  {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
-    { path: '', component: AppComponent},
-    { path: 'category/business',component: CategoryComponent },
-    { path: 'category/sports',component: CategoryComponent },
+    { path: '', component: HomeComponent},
+    // { path: 'category/sports', component: CategoryComponent },
+    { path: 'category/:source', component: CategoryComponent },
+
 ];
 
 @NgModule({

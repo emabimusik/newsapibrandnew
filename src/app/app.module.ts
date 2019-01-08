@@ -8,6 +8,7 @@ import { NewsApiService } from './news-api.service';
 import { CategoryComponent } from './category/category.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {RemovePipe} from './uniques.pipe';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -15,7 +16,7 @@ import {RemovePipe} from './uniques.pipe';
   declarations: [
     AppComponent,
     CategoryComponent,
-    NavbarComponent, RemovePipe,
+    NavbarComponent, RemovePipe, HomeComponent,
   ],
   imports: [
     BrowserModule,

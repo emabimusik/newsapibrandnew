@@ -25,9 +25,9 @@
       <!-- END Toggle buttons and brand -->
       <!-- Top navbar -->
       <div id="navbar" class="collapse navbar-collapse js-navbar-collapse" aria-expanded="true" role="banner">
-        <ul class="nav navbar-nav navbar-right" *ngFor="let source of mSources" >
+        <ul class="nav navbar-nav navbar-right" *ngFor="let source of mSources|unique " >
 
-          <li class="nav-item"><a class="nav-link" routerLink="/category/{{source.category}}/">{{source.category |unique}}</a></li>
+          <li class="nav-item" (click)="getParam(source.category)" ><a class="nav-link" [routerLink]="['/category',source.category]" routerLinkActive="active" >{{source.category}}</a></li>
         </ul>
          <ul class="nav navbar-nav navbar-right">
           <li><a class="is-outlined" href="/breaking_news/">Breaking News</a></li>
