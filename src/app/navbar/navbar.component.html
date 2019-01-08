@@ -1,0 +1,69 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="alert-container">
+
+</div>
+
+<!--top nav & branding-->
+<header class="site-header-sm sticky">
+  <!--top navbar & brand-->
+  <nav class="navbar navbar-default">
+
+    <div class="container">
+      <!--toggle button and brand!-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="glyphicon glyphicon-option-vertical"></span>
+        </button>
+        <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="/"> world headlines </a>
+      </div>
+      <!-- END Toggle buttons and brand -->
+      <!-- Top navbar -->
+      <div id="navbar" class="collapse navbar-collapse js-navbar-collapse" aria-expanded="true" role="banner">
+        <ul class="nav navbar-nav navbar-right" *ngFor="let source of mSources" >
+
+          <li class="nav-item"><a class="nav-link" routerLink="/category/{{source.category}}/">{{source.category |unique}}</a></li>
+        </ul>
+         <ul class="nav navbar-nav navbar-right">
+          <li><a class="is-outlined" href="/breaking_news/">Breaking News</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Me<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="https://www.facebook.com/eaba2015 " target="_blank" title="My account on facebook"><i class="fa fa-facebook fa-lg"></i> Facebook</a></li>
+              <li><a href="https://twitter.com/emabia1" target="_blank" title="My account on twitter"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
+              <li><a href="https://plus.google.com/id" target="_blank" title="My account on google-plus"><i class="fa fa-google-plus fa-lg" target="_blank"></i> Google plus</a></li>
+              <li><a href="https://www.instagram.com/id/" target="_blank" title="My Account on instagram"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/id/" title="My account on linkedin"><i class="fa fa-linkedin fa-lg"></i> Linkedin</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-search fa-2x"></span></a>
+            <ul class="dropdown-menu container">
+              <li>
+                <div>
+                  <form id="searchform" action="/everything/" method="POST" role="search" accept-charset="utf-8">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="mqfiuIB7PG1uT81uCvRrjye9a2xgLvdohuc45ztq09qMSZkzmj6efql9jiTNWzX8">
+
+                    <div class="input-group input-group-lg">
+                      <input type="text" class="form-control" name="search_text" required="" placeholder="Search through millions of articles from over 5,000 sources for exemple : cnn, africa ,  ...">
+                      <span class="input-group-btn">
+                                        <button class="btn btn-danger" type="reset" data-toggle="dropdown"><span class="fa fa-close"></span></button>
+                                    </span>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+</header>

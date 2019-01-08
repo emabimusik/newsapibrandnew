@@ -1,0 +1,43 @@
+﻿fa {
+    font-size: 60px;
+}
+
+.fa-clock-o,.fa-clock-o b{
+  color: #2cad6a;
+}
+.poweredBy:hover{
+  color: yellow;
+}
+
+
+.thumbnail{
+    width: 100%;
+    height: 50%;
+}
+
+.well p.lead{
+  color: #fff;
+}
+
+.news-title{
+  color:#ec971f;
+}
+
+.fa-arrow-circle-right{
+  color: #fff;
+}
+
+h3{
+  color: orange;
+}
+.footer-menu > li a{
+  color: #fff;
+}
+body {
+ padding-top:50px;
+}
+
+.footer-center{
+  list-style: none;
+  display:inline;
+}
