@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NewsApiService} from '../news-api.service';
 import { Router, RouterModule , ActivatedRoute} from '@angular/router';
-import {RemovePipe} from ' ../uniques.pipe';
+import {RemovePipe} from '../uniques.pipe';
 
 
 @Component({
@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
         this.newsapi.initSources().subscribe(data => this.mSources = data['sources']);
     }
      getParam(datacategory: string) {
-       console.log(datacategory);
+       console.log('from :navbar ' + datacategory);
        this.router.navigate(['/category', datacategory]);
     }
 }

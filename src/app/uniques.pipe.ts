@@ -6,7 +6,7 @@ import * as _ from 'lodash';
 })
 export class RemovePipe implements PipeTransform {
   transform(value: any): any {
-    if( value !== undefined && value !== null) {
+    if (value !== undefined && value !== null) {
       return _.uniqBy(value, 'category');
 
 
